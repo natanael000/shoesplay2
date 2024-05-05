@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    overflow-x: hidden;
+} 
+
+body {
+    background-color: #101924;
+    color: #fff
+}
+
+.container {
+    max-width: 1024px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #17191d;
+    padding-top: 16px;
+    color: #fff;
+}
+header h1 a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header ul {
+    display: flex;
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    padding: 16px 0;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.container-flex {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 24.25%);
+    
+}
+
+#sobre-a-loja img {
+    width: 150px;
+    margin-right: 20px;
+    display: inline-block;
+
+}
+
+.item-central {
+    align-self: center;
+    
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-family: 'Bungee', sans-serif;
+}
+
+
+
+
+.lista-tennis {
+    flex-wrap: wrap;
+}
+
+.lista-tennis li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 25px;
+}
+
+
+
+.lista-tennis li img {
+   width: 200px;
+   height: auto;
+   object-fit: contain;
+   
+}
+
+
+.lista-tennis li h3 {
+    margin: 16px 0;
+}
+
+
+button {
+    display: inline-block;
+    width: 80%;
+    padding: 2px 0;
+    border: none;
+    background-color: rgb(9, 9, 139);
+    color:#fff;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: inherit;
+    cursor: pointer;
+    border-radius: 6px;
+    align-self: normal;
+    
+}
+
+button:houver {
+    background-color: black;
+    color: #fff;
+}
+
+.container li strong {
+    align-items: left;
+}
+
+.price {
+    margin: 16px;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+strong {
+    align-items: left;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bolder;
+    display: block;
+}
+
+.form-campo input, 
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 90px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+#hr_prod {
+    border: 1px solid #fff;
+    margin-bottom: 32px;
+}
+
+#hr_sobre {
+    border: 1px solid #fff;
+    margin-bottom: 32px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header h1, a {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        height: 40px;
+    }
+    header .container {
+        height: 120px
+    }
+
+    header {
+        padding: 0px;
+    }
+    .container {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+    }
+    .container .alinha ul {
+        display: block;
+        align-items: center;
+    }
+
+    .alinha .item-central {
+        margin-right: 00px;
+    }
+
+    .lista-tennis li {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .item-central {
+        margin: 0 auto; 
+    }
+    footer .container p {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    footer ul ,.container-flex {
+        justify-content: center;
+    }
+
+    header nav {
+        text-align: center;
+
+    }
+
+    header nav ul {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header ul li {
+        flex: 1;
+        text-align: center;
+    }
+    #sobre-a-loja .container-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #sobre-a-loja div {
+        text-align: center;
+    }
+    #sobre-a-loja h2 {
+        margin-top: 0;
+    }
+    #hr-sobre {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 90%;
+        
+    }
+}
